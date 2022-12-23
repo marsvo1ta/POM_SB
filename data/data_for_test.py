@@ -7,6 +7,7 @@ random_track_number = random.randrange(111111111, 999999999)
 
 EMAIL = str(os.environ.get('NPS_EMAIL'))
 PASSWORD = str(os.environ.get('NPS_PASS'))
+PHONE = f'+38068{random.randrange(2111111, 9999999)}'
 
 RANDOM_NAME = names.get_first_name()
 RANDOM_DIGIT = str(randomize)

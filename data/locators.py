@@ -16,7 +16,7 @@ LK_TITLE = 'h1'
 #Test Order
 ADD_ORDER = "svg.btn__icon"
 COUNTRY_SELECT = "div#vs1__combobox"
-SELECT_USA = "li#vs1__option-1"
+SELECT_USA = "li#vs1__option-0"
 STORE_SELECT = "div#vs2__combobox"
 SELECT_AMAZON = "li#vs2__option-1"
 ORDER_NAME = "input#forward_order_name"
@@ -31,6 +31,8 @@ FULL_ORDER_SUM = "span#order_sum"
 TRACK_NUMBER = "input#forward_order_trackNo"
 CONTINUE_TO_ORDER_CREATION = "button#declaration.btn.btn_outline"
 ADDRESS_SELECT = "div#vs4__combobox"
+INPUT_PHONE = "input-phone-number"
+SUBMIT_BUTTON = "button.btn_outline"
 
 CATALOG_FROM_HEADER = 'a:contains("Магазини")'
 ALL_STORES_SELECT = "div#vs1__combobox"

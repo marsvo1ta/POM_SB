@@ -23,12 +23,12 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install seleniumbase names 
+        pip install seleniumbase names pytest-md
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test
       run: |
         export NPS_PASS=${{ secrets.PASSWORD }}
         export NPS_EMAIL=${{ secrets.EMAIL }}
         export NPS_URL=${{ secrets.NPS_URL }}
-        pytest tests/test_np.py --headless
+        pytest tests/test_np.py --headless --md README.md
         

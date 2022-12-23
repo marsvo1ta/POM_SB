@@ -1,5 +1,4 @@
-<html>
-  <head>
+<head>
     <meta charset="utf-8"/>
     <title>Test Report</title>
     <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
@@ -297,4 +296,4 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body>

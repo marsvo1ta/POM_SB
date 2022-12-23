@@ -1,5 +1,5 @@
 
-<h1>report.html</h1>
+<h1>Test Report</h1>
     <p>Report generated on 23-Dec-2022 at 10:46:54 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">

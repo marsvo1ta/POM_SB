@@ -44,7 +44,9 @@ class TestNP(BaseCase):
         self.scroll_to_bottom()
         self.type(TRACK_NUMBER, RANDOM_TRACK_NUMBER)
         self.click(CONTINUE_TO_ORDER_CREATION)
-        # self.click(ADDRESS_SELECT)
+        self.click(ADDRESS_SELECT)
+        self.type(INPUT_PHONE, PHONE)
+
 
     def test_catalog(self):
         self.open(CATALOG_URL)

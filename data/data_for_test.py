@@ -16,4 +16,5 @@ RANDOM_TRACK_NUMBER = str(random_track_number)
 
 CABINET = 'Особистий кабінет'
 FIVE_ELEVEN = '5.11 Tactical'
-
+SUCCESS_SCREEN_TITLE = 'Відправлення успішно додано'
+ORDERS_TITLE = 'Мої відправлення'

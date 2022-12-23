@@ -45,8 +45,12 @@ class TestNP(BaseCase):
         self.type(TRACK_NUMBER, RANDOM_TRACK_NUMBER)
         self.click(CONTINUE_TO_ORDER_CREATION)
         self.click(ADDRESS_SELECT)
+        self.click(FIRST_ADDRESS)
         self.type(INPUT_PHONE, PHONE)
-
+        self.click(SUBMIT_BUTTON)
+        self.assert_text(SUCCESS_SCREEN_TITLE, SUCCESS_SCREEN)
+        self.click(BACK_TO_LK_BUTTON)
+        self.assert_text(ORDERS_TITLE, MY_ORDERS_TITLE)
 
     def test_catalog(self):
         self.open(CATALOG_URL)

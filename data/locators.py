@@ -31,8 +31,13 @@ FULL_ORDER_SUM = "span#order_sum"
 TRACK_NUMBER = "input#forward_order_trackNo"
 CONTINUE_TO_ORDER_CREATION = "button#declaration.btn.btn_outline"
 ADDRESS_SELECT = "div#vs4__combobox"
-INPUT_PHONE = "input-phone-number"
+FIRST_ADDRESS = "li#vs4__option-0"
+INPUT_PHONE = "input#input-phone-number"
+ERROR_VALIDATION_PHONE = 'div.form__field-6.form__field-xs-12.form__field.has-error.focused'
 SUBMIT_BUTTON = "button.btn_outline"
+SUCCESS_SCREEN = "h1"
+BACK_TO_LK_BUTTON = "a.btn"
+MY_ORDERS_TITLE = "h2"
 
 CATALOG_FROM_HEADER = 'a:contains("Магазини")'
 ALL_STORES_SELECT = "div#vs1__combobox"

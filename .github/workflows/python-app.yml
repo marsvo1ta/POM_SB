@@ -42,4 +42,7 @@ jobs:
         
     - name: Send Gmail
       run: |
+        export RECEIVE_FROM_GMAIL=${{ secrets.RECEIVE_FROM_GMAIL }}
+        export SEND_TO_GMAIL=${{ secrets.SEND_TO_GMAIL }}
+        export GMAIL_PYTEST_CODE=${{ secrets.GMAIL_PYTEST_CODE }}
         python send_to_gmail.py

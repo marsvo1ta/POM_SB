@@ -38,5 +38,8 @@ jobs:
         export NPS_PASS=${{ secrets.PASSWORD }}
         export NPS_EMAIL=${{ secrets.EMAIL }}
         export NPS_URL=${{ secrets.NPS_URL }}
-        pytest tests/test_np.py --headless --github-report
+        pytest tests/test_np.py --headless --github-report --dashboard
         
+    - name: Send Gmail
+      run: |
+      python send_to_gmail.py

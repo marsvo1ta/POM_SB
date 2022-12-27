@@ -42,4 +42,4 @@ jobs:
         
     - name: Send Gmail
       run: |
-      python send_to_gmail.py
+        python send_to_gmail.py

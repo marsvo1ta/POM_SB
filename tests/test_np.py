@@ -1,9 +1,8 @@
 from seleniumbase import BaseCase
-# import pytest
 
 from data.locators import *
 from data.data_for_test import *
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+
 
 class TestNP(BaseCase):
 
@@ -64,5 +63,4 @@ class TestNP(BaseCase):
         self.click(TACTICAL_STORE)
         self.assert_text(FIVE_ELEVEN, TACTICAL_PAGE)
 
-# if __name__ == "__main__":
-#     pytest.main()
+

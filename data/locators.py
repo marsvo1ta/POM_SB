@@ -4,7 +4,7 @@ MAIN_URL = str(os.environ.get('NPS_URL'))
 ORDERS_URL = MAIN_URL + 'orders'
 CATALOG_URL = MAIN_URL + 'catalog'
 
-#Test Login
+# Test Login
 ALLOW_PRIVACY_POLICY = "button#accept-privacy-policy"
 HAMBURGER = "a.header-right__login"
 EMAIL_FIELD = "input#email"
@@ -14,7 +14,7 @@ LOGIN_BUTTON = "button.btn"
 LK_TITLE = 'h1'
 
 #Test Order
-ADD_ORDER = "svg.btn__icon"
+ADD_ORDER = "a.cabinet-link"
 COUNTRY_SELECT = "div#vs1__combobox"
 SELECT_USA = "li#vs1__option-0"
 STORE_SELECT = "div#vs2__combobox"
@@ -37,8 +37,9 @@ ERROR_VALIDATION_PHONE = 'div.form__field-6.form__field-xs-12.form__field.has-er
 SUBMIT_BUTTON = "button.btn_outline"
 SUCCESS_SCREEN = "h1"
 BACK_TO_LK_BUTTON = "a.btn"
-MY_ORDERS_TITLE = "h2"
+MY_ORDERS_TITLE = "h3"
 
+#Test Catalog
 CATALOG_FROM_HEADER = 'a:contains("Магазини")'
 ALL_STORES_SELECT = "div#vs1__combobox"
 CLOTHES = "li#vs1__option-1"
@@ -48,3 +49,15 @@ SORTING_SELECT = "div#vs3__combobox"
 ASC_SELECT = "ul#vs3__listbox"
 TACTICAL_STORE = "div.catalog-item__title:contains('5.11 Tactical')"
 TACTICAL_PAGE = "h2.h2"
+
+#Test Countries in Header
+COUNTRY_LINK = "div.menu-link__text:contains('Країни')"
+US_COUNTRY = "a.countries-link:contains('США')"
+IT_COUNTRY = "a.countries-link:contains('Італія')"
+ES_COUNTRY = "a.countries-link:contains('Іспанія')"
+GB_COUNTRY = "a.countries-link:contains('Британія')"
+PL_COUNTRY = "a.countries-link:contains('Польща')"
+TU_COUNTRY = "a.countries-link:contains('Туреччина')"
+GE_COUNTRY = "a.countries-link:contains('Німеччина')"
+FR_COUTRY = "a.countries-link:contains('Франція')"
+CZ_COUTRY = "a.countries-link:contains('Чехія')"

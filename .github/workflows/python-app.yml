@@ -3,7 +3,7 @@ name: Testing NP
 
 on:
   schedule:
-    - cron: '00 8 * *'
+    - cron: '0 8 * * *'
   push:
     branches: [ "main" ]
     

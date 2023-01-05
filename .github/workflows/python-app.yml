@@ -1,3 +1,6 @@
+env:
+  NAME: ${{ secrets.START_WORKFLOW }}
+
 
 name: Testing NP
 
@@ -6,7 +9,15 @@ on:
     - cron: '0 8 * * *'
   push:
     branches: [ "main" ]
-    
+  workflow_dispatch:
+    inputs:
+      my_value:
+        description: 'My input value'
+        required: true
+        default: $NAME
+        type: string
+  repository_dispatch:
+    types: [START]
 
 
 permissions:
@@ -14,7 +25,6 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:

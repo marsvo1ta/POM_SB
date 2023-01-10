@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="8.354" timestamp="2022-12-27T14:36:00.083129" hostname="MacBook-Pro-QA.local"><testcase classname="tests.test_np.TestNP" name="test_counties_in_header" time="8.286" /></testsuite></testsuites>

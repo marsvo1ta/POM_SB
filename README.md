@@ -1,1 +1,1 @@
-https://github.com/marsvo1ta/POM_SB/actions/workflows/python-app.yml/badge.svg
+![example workflow](https://github.com/marsvo1ta/POM_SB/actions/workflows/python-app.yml/badge.svg)

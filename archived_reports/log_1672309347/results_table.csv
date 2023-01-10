@@ -1,0 +1,4 @@
+"Num","Result","Screenshot","URL","Browser","Epoch Time","Verification Instructions","Additional Info"
+"1","Success","-","https://xkcd.com/1700/","chrome","1672309331","Do you see a webcomic?","*"
+"2","Success","-","https://seleniumbase.io/demo_page","chrome","1672309339","Do you see elements in a table?","*"
+"3","Success","-","https://seleniumbase.io/devices/","chrome","1672309347","Do you see 4 computer devices?","*"

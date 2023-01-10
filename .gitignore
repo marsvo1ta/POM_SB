@@ -3,3 +3,4 @@ tests/__pycache__/test_np.cpython-310-pytest-7.2.0.pyc
 data/__pycache__/data_for_test.cpython-310-pytest-7.2.0.pyc
 data/__pycache__/locators.cpython-310.pyc
 data/__pycache__/data_for_test.cpython-310.pyc
+.pytest

@@ -4,6 +4,12 @@ MAIN_URL = str(os.environ.get('NPS_URL'))
 ORDERS_URL = MAIN_URL + 'orders'
 CATALOG_URL = MAIN_URL + 'catalog'
 
+
+# Test Start Deploy
+START_DEPLOY_BUTTON = 'button#start-btn'
+DEPLOY_LOADER = 'img#progress-animation'
+DEPLOY_TEXT = 'h1#in-progress'
+
 # Test Login
 ALLOW_PRIVACY_POLICY = "button#accept-privacy-policy"
 HAMBURGER = "a.header-right__login"
@@ -61,3 +67,6 @@ TU_COUNTRY = "a.countries-link:contains('Туреччина')"
 GE_COUNTRY = "a.countries-link:contains('Німеччина')"
 FR_COUTRY = "a.countries-link:contains('Франція')"
 CZ_COUTRY = "a.countries-link:contains('Чехія')"
+
+
+

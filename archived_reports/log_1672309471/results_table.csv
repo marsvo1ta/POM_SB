@@ -1,6 +1,0 @@
-"Num","Result","Screenshot","URL","Browser","Epoch Time","Verification Instructions","Additional Info"
-"1","Success","-","https://xkcd.com/1513/","chrome","1672309423","Does the page look good?","*"
-"2","Success","-","https://xkcd.com/1522/","chrome","1672309437","Can you find the moon?","*"
-"3","Success","-","https://xkcd.com/1523/","chrome","1672309445","Do the drones look safe?","*"
-"4","Success","-","https://seleniumbase.io/devices/?url=seleniumbase.io/error_page","chrome","1672309453","Do you see Octocat in a Jedi knight robe?","*"
-"5","Success","-","https://xkcd.com/208/","chrome","1672309471","Does the page say 'Abnormal Expressions'?","*"

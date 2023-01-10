@@ -1,6 +1,6 @@
 env:
   NAME: ${{ secrets.START_WORKFLOW }}
-
+  NPS_PASS: ${{ secrets.PASSWORD }}
 
 name: Testing NP
 
@@ -45,7 +45,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test
       run: |
-        export NPS_PASS=${{ secrets.PASSWORD }}
         export NPS_EMAIL=${{ secrets.EMAIL }}
         export NPS_URL=${{ secrets.NPS_URL }}
         pytest tests --headless --github-report --dashboard

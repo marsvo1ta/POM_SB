@@ -1,7 +1,9 @@
 env:
   NAME: ${{ secrets.START_WORKFLOW }}
   NPS_PASS: ${{ secrets.PASSWORD }}
-
+  NPS_EMAIL: ${{ secrets.EMAIL }}
+  NPS_URL: ${{ secrets.NPS_URL }}
+  
 name: Testing NP
 
 on:
@@ -45,8 +47,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test
       run: |
-        export NPS_EMAIL=${{ secrets.EMAIL }}
-        export NPS_URL=${{ secrets.NPS_URL }}
         pytest tests --headless --github-report --dashboard
         
     - name: Send Gmail

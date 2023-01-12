@@ -18,3 +18,6 @@ CABINET = 'Особистий кабінет'
 FIVE_ELEVEN = '5.11 Tactical'
 SUCCESS_SCREEN_TITLE = 'Відправлення успішно додано'
 ORDERS_TITLE = 'Мої відправлення'
+
+HS_COOKIES = 'hs_cookies.txt'
+DEVELOP_COOKIES = ['cookies.txt', 'develop_cookies.txt']

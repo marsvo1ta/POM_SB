@@ -3,7 +3,8 @@ import os
 MAIN_URL = str(os.environ.get('NPS_URL'))
 ORDERS_URL = MAIN_URL + 'orders'
 CATALOG_URL = MAIN_URL + 'catalog'
-
+HS_CODE_BRANCH = 'http://hs-modal.npshopping-phoenix.stag.stfalcon.com/'
+HS_CODE_ORDER = HS_CODE_BRANCH + 'forwarding/declaration'
 
 # Test Start Deploy
 START_DEPLOY_BUTTON = 'button#start-btn'
@@ -69,4 +70,8 @@ FR_COUTRY = "a.countries-link:contains('Франція')"
 CZ_COUTRY = "a.countries-link:contains('Чехія')"
 
 
-
+#Test HS Code
+CARGO_CATEGORY = "div#vs4__combobox"
+STARLINK = "li#vs4__option-0"
+LABEL = "label.form-label.required"
+DEFAULT_STATE = "span#order_customs_clearance"

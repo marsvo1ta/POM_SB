@@ -3,7 +3,7 @@ from seleniumbase import BaseCase
 from data.locators import *
 
 
-class TestNP(BaseCase):
+class TestNPStart(BaseCase):
 
     def test_start_staging(self):
         self.open(MAIN_URL)

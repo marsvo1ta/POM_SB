@@ -18,6 +18,9 @@ CABINET = 'Особистий кабінет'
 FIVE_ELEVEN = '5.11 Tactical'
 SUCCESS_SCREEN_TITLE = 'Відправлення успішно додано'
 ORDERS_TITLE = 'Мої відправлення'
+NEEDLE = 'Голка'
+STARLINK = 'Starlink'
+EMPTY_CUSTOMS_TEXT = 'Я згоден з оплатою послуги розмитнення (митний збір, податки та митно-брокерські послуги)'
 
 HS_COOKIES = 'hs_cookies.txt'
 DEVELOP_COOKIES = ['cookies.txt', 'develop_cookies.txt']

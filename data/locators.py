@@ -1,10 +1,9 @@
 import os
 
 MAIN_URL = str(os.environ.get('NPS_URL'))
-ORDERS_URL = MAIN_URL + 'orders'
-CATALOG_URL = MAIN_URL + 'catalog'
-HS_CODE_BRANCH = 'http://hs-modal.npshopping-phoenix.stag.stfalcon.com/'
-HS_CODE_ORDER = HS_CODE_BRANCH + 'forwarding/declaration'
+ORDERS_URL = f'{MAIN_URL}orders'
+CATALOG_URL = f'{MAIN_URL}catalog'
+NEW_ORDER = f'{MAIN_URL}forwarding/declaration'
 
 # Test Start Deploy
 START_DEPLOY_BUTTON = 'button#start-btn'
@@ -72,6 +71,19 @@ CZ_COUTRY = "a.countries-link:contains('Чехія')"
 
 #Test HS Code
 CARGO_CATEGORY = "div#vs4__combobox"
-STARLINK = "li#vs4__option-0"
-LABEL = "label.form-label.required"
-DEFAULT_STATE = "span#order_customs_clearance"
+CARGO_CATEGORY_1 = "div#vs5__combobox"
+CARGO_CATEGORY_2 = 'div#vs6__combobox'
+STARLINK_FROM_SELECT = "li#vs4__option-0"
+NEEDLE_FROM_SELECT = "div.select-option:contains('Голка')"
+LABEL = "i.icon-info"
+CUSTOMS_DEFAULT_STATE = "span#order_customs_clearance"
+SELECTED_FIRST_ITEM = "input[aria-labelledby='vs4__combobox']"
+SELECTED_SECOND_ITEM = "input[aria-labelledby='vs6__combobox']"
+CUSTOMS_PRICE = "span#order_customs_clearance"
+CUSTOMS_ELEMENT = "div.delivery-information"
+ORDER_SUM = 'span#order_sum'
+BONUSES = 'div.delivery-information'
+DELETE_ONE_POSITION = "i:contains('close')"
+ALLOW_POP_UP = '//*[@id="add-order"]/div/div/div[3]/div/div/div[4]/span'
+NOT_IN_LIST_CHECKBOX = "label:contains(' Немає в переліку')"
+

@@ -13,4 +13,3 @@ smtpsrv = SendGMail(id=os.environ.get('RECEIVE_FROM_GMAIL'),pwd=os.environ.get('
 with open('dashboard.html', 'r',) as report:
     S = BeautifulSoup(report,features="html.parser")
     smtpsrv.send(None, os.environ.get('SEND_TO_GMAIL'), subject=f'{subject} {date}', text=txt, html=S)
-print(date)

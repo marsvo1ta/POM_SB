@@ -5,8 +5,6 @@ env:
 name: Testing NP
 
 on:
-  schedule:
-    - cron: '0 8 * * *'
   push:
     branches: [ "main" ]
   workflow_dispatch:

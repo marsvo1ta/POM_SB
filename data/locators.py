@@ -3,7 +3,9 @@ import os
 MAIN_URL = str(os.environ.get('NPS_URL'))
 ORDERS_URL = f'{MAIN_URL}orders'
 CATALOG_URL = f'{MAIN_URL}catalog'
+PERSONAL_DATA_URL = f'{MAIN_URL}profile'
 NEW_ORDER = f'{MAIN_URL}forwarding/declaration'
+
 
 # Test Start Deploy
 START_DEPLOY_BUTTON = 'button#start-btn'
@@ -82,3 +84,24 @@ BONUSES = 'div.delivery-information'
 DELETE_ONE_POSITION = "i:contains('close')"
 ALLOW_POP_UP = '//*[@id="add-order"]/div/div/div[3]/div/div/div[4]/span'
 NOT_IN_LIST_CHECKBOX = "label.label-checkbox:contains(' Немає в переліку')"
+
+
+#Test Personal
+PROFILE_TAB = "li.tabs-nav__item:contains('Профіль')"
+MY_ADDRESSES_TAB = "li.tabs-nav__item:contains('Мої адреси')"
+PASSPORT_DATA_TAB = "li.tabs-nav__item:contains('Паспортні дані')"
+CYRILLIC = "div.form__box-title:contains('Кирилиця')"
+LATIN = "div.form__box-title:contains('Латиниця')"
+SAVE_PROFILE_BUTTON = "button.btn:contains('Зберегти')"
+CHANGE_EMAIL_BUTTON = "div.bottom-panel:contains('Змінити Email')"
+SAVE_PASSWORD_BUTTON = "div.bottom-panel:contains('Змінити пароль')"
+GENDER_LABEL = "label.float-label:contains('Стать')"
+DATE_PROFILE_LABEL = "label.float-label:contains('Дата народження')"
+GENDER_RADIO_MALE = "div.radio-element__item:contains('Чоловік')"
+GENDER_RADIO_FEMALE = "div.radio-element__item:contains('Жінка')"
+ADD_ADDRESS_BUTTON = "a#add-address"
+MY_ADDRESSES_ITEMS = "div.my-addresses"
+PASSPORT_UKRAINE = "a.form-office__tab:contains('Паспорт України')"
+ID_CARD = "a.form-office__tab:contains('ID картка')"
+SAVE_PASSPORT_BUTTON = "div.bottom-panel"
+IDENTICAL_NUMBER = "div.form__field:contains('Ідентифікаційний номер')"

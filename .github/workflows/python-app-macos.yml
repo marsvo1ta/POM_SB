@@ -2,7 +2,7 @@ env:
   NAME: ${{ secrets.START_WORKFLOW }}
 
 
-name: Testing NP
+name: Testing NP Mac
 
 on:
   push:

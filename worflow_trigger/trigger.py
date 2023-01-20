@@ -11,3 +11,9 @@ def dispatch():
     return response.status_code
 
 
+def fef():
+    global var 
+    
+    return bool(var)
+
+print(fef())

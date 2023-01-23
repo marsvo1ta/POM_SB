@@ -44,6 +44,6 @@ jobs:
         export NPS_PASS=${{ secrets.PASSWORD }}
         export NPS_EMAIL=${{ secrets.EMAIL }}
         export NPS_URL=${{ secrets.NPS_URL }}
-        pytest tests --headless --github-report --dashboard -v
+        pytest tests --headless --github-report --dashboard -v --pls=none --sjw
         
         

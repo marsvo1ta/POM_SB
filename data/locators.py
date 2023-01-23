@@ -5,7 +5,7 @@ ORDERS_URL = f'{MAIN_URL}orders'
 CATALOG_URL = f'{MAIN_URL}catalog'
 PERSONAL_DATA_URL = f'{MAIN_URL}profile'
 NEW_ORDER = f'{MAIN_URL}forwarding/declaration'
-
+PASSPORT_URL = f'{PERSONAL_DATA_URL}/passport'
 
 # Test Start Deploy
 START_DEPLOY_BUTTON = 'button#start-btn'
@@ -105,3 +105,22 @@ PASSPORT_UKRAINE = "a.form-office__tab:contains('Паспорт України')
 ID_CARD = "a.form-office__tab:contains('ID картка')"
 SAVE_PASSPORT_BUTTON = "div.bottom-panel"
 IDENTICAL_NUMBER = "div.form__field:contains('Ідентифікаційний номер')"
+
+
+#Test Passport
+FIRST_NAME = "input#user_passport_firstName"
+LAST_NAME = "input#user_passport_lastName"
+MIDDLE_NAME = "input#user_passport_middleName"
+SERIAL_NUMBER = "input#user_passport_serialNumber"
+ISSUED_BY = "input#user_passport_issuedBy"
+REGISTRATION_ADDRESS = "input#user_passport_registration"
+IDENTICAL_NUMBER_INPUT = "input#user_passport_taxNumber"
+ERROR_TITLE = "span.text-error"
+BIRTHDATE_DAY = "input#user_passport_birthDate_day"
+BIRTHDAY_YEAR = "input#user_passport_birthDate_year"
+BIRTHDAY_MONTH_SELECT = "span#select2-user_passport_birthDate_month-container"
+SELECT_FEBRUARY = "li:contains('лютого')"
+ISSUED_BY_MONTH = "span#select2-user_passport_date_month-container"
+SELECT_MARCH = "li:contains('березня')"
+ISSUED_BY_DAY = "input#user_passport_date_day"
+ISSUED_BY_YEAR = "input#user_passport_date_year"

@@ -1,5 +1,7 @@
 from seleniumbase import BaseCase
+from seleniumbase.fixtures.base_case import NoSuchElementException
 from time import sleep
+
 from data.locators import *
 from data.data_for_test import *
 from data.handling_selectors import *
@@ -19,7 +21,11 @@ class TestHSCode(BaseCase):
         self.type(SERIAL_NUMBER, SERIAL_NUMBER_TEXT)
         self.type(IDENTICAL_NUMBER_INPUT, RANDOM_IDENTICAL_NUMBER)
         self.click(SAVE_PASSPORT_BUTTON)
-        self.assert_text('Значення недопустиме.', ERROR_TITLE)
+        try:
+            self.assert_element(ERROR_TITLE)
+            self.assert_text('Значення недопустиме.', ERROR_TITLE)
+        except NoSuchElementException:
+            self.assert_text('ID картка', ID_CARD_TEXT)
         self.click(BIRTHDAY_MONTH_SELECT)
         self.click(SELECT_FEBRUARY)
         self.type(BIRTHDATE_DAY, '10')

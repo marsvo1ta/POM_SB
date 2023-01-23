@@ -129,3 +129,21 @@ SELECT_MARCH = contains('li', 'березня')
 ISSUED_BY_DAY = "input#user_passport_date_day"
 ISSUED_BY_YEAR = "input#user_passport_date_year"
 
+
+#Test ID Card
+ID_FIRST_NAME = "input#user_identity_card_firstName"
+ID_SECOND_NAME = "input#user_identity_card_lastName"
+ID_MIDDLE_NAME = "input#user_identity_card_middleName"
+ID_CARD_NUMBER = "input#user_identity_card_identityCardNumber"
+ID_ISSUED_BY = "input#user_identity_card_issuedBy"
+ID_ADDRESS_REGISTRATION = "input#user_identity_card_registration"
+ID_IDENTITY_NUMBER = "input#user_identity_card_taxNumber"
+ID_BIRTHDATE_DAY = "input#user_identity_card_birthDate_day"
+ID_BIRTHDATE_YEAR = "input#user_identity_card_birthDate_year"
+ID_BIRTHDATE_MONTH = "span#select2-user_identity_card_birthDate_month-container"
+ID_SELECT_APRIL = contains("li", "квітня")
+ID_ISSUED_BY_DAY = "input#user_identity_card_date_day"
+ID_ISSUED_BY_YEAR = "input#user_identity_card_date_year"
+ID_ISSUED_BY_MONTH = "span#select2-user_identity_card_date_month-container"
+ID_SELECT_MAY = contains("li", "травня")
+ID_SAVE_CARD = contains('button', 'Зберегти ID картку')

@@ -5,8 +5,6 @@ env:
 name: Testing NP Mac
 
 on:
-  push:
-    branches: [ "main" ]
   workflow_dispatch:
     inputs:
       my_value:

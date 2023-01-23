@@ -1,5 +1,8 @@
 import os
 
+from easy_contain.manage_contains import contains
+
+
 MAIN_URL = str(os.environ.get('NPS_URL'))
 ORDERS_URL = f'{MAIN_URL}orders'
 CATALOG_URL = f'{MAIN_URL}catalog'
@@ -116,12 +119,13 @@ ISSUED_BY = "input#user_passport_issuedBy"
 REGISTRATION_ADDRESS = "input#user_passport_registration"
 IDENTICAL_NUMBER_INPUT = "input#user_passport_taxNumber"
 ERROR_TITLE = "span.text-error"
-ID_CARD_TEXT = "a.form-office__tab:contains('ID картка')"
+ID_CARD_TEXT = contains('a.form-office__tab','ID картка')
 BIRTHDATE_DAY = "input#user_passport_birthDate_day"
 BIRTHDAY_YEAR = "input#user_passport_birthDate_year"
 BIRTHDAY_MONTH_SELECT = "span#select2-user_passport_birthDate_month-container"
-SELECT_FEBRUARY = "li:contains('лютого')"
+SELECT_FEBRUARY = contains('li', 'лютого')
 ISSUED_BY_MONTH = "span#select2-user_passport_date_month-container"
-SELECT_MARCH = "li:contains('березня')"
+SELECT_MARCH = contains('li', 'березня')
 ISSUED_BY_DAY = "input#user_passport_date_day"
 ISSUED_BY_YEAR = "input#user_passport_date_year"
+

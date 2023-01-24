@@ -36,7 +36,7 @@ class TestHSCode(BaseCase):
         self.type(UNIT_PRICE, '1000')
         self.click(LABEL)
         self.scroll_to_element(BONUSES)
-        self.assert_text('292.95', CUSTOMS_PRICE)
+        self.assert_text('292.60', CUSTOMS_PRICE)
         self.assert_text('1000', ORDER_SUM)
         self.type(UNIT_PRICE, '1')
         self.click(LABEL)

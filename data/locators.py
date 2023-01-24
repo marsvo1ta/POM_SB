@@ -4,16 +4,28 @@ from easy_contain.manage_contains import contains
 
 
 MAIN_URL = str(os.environ.get('NPS_URL'))
+REGISTRATION_PAGE = f'{MAIN_URL}register'
 ORDERS_URL = f'{MAIN_URL}orders'
 CATALOG_URL = f'{MAIN_URL}catalog'
 PERSONAL_DATA_URL = f'{MAIN_URL}profile'
 NEW_ORDER = f'{MAIN_URL}forwarding/declaration'
 PASSPORT_URL = f'{PERSONAL_DATA_URL}/passport'
+CATCHER_URL = f'{MAIN_URL[:-1]}:1080'
 
 # Test Start Deploy
 START_DEPLOY_BUTTON = 'button#start-btn'
 DEPLOY_LOADER = 'img#progress-animation'
 DEPLOY_TEXT = 'h1#in-progress'
+
+# Test Registration
+REGISTER_FIRST_NAME = "input#name"
+REGISTER_SECOND_NAME = "input#surname"
+REGISTER_PHONE = "input#fos_user_registration_form_phone"
+REGISTER_EMAIL = "input#email-1"
+REGISTER_PASSWORD = "input#password-1"
+REGISTER_SUBMIT_BUTTON = "button.btn"
+REGISTER_SUCCESS_SCREEN = "p.alert__text"
+OPEN_LETTER = "span"
 
 # Test Login
 ALLOW_PRIVACY_POLICY = "button#accept-privacy-policy"
@@ -147,3 +159,5 @@ ID_ISSUED_BY_YEAR = "input#user_identity_card_date_year"
 ID_ISSUED_BY_MONTH = "span#select2-user_identity_card_date_month-container"
 ID_SELECT_MAY = contains("li", "травня")
 ID_SAVE_CARD = contains('button', 'Зберегти ID картку')
+
+

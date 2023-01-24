@@ -1,3 +1,4 @@
+import pytest
 from seleniumbase import BaseCase
 
 from data.locators import *
@@ -6,7 +7,7 @@ from data.handling_selectors import *
 
 class TestNP(BaseCase):
 
-
+    @pytest.mark.run(order=2)
     def test_login(self):
         self.get(MAIN_URL)
         self.maximize_window()
@@ -20,6 +21,7 @@ class TestNP(BaseCase):
         self.save_cookies()
         
 
+    @pytest.mark.run(order=3)
     def test_order(self):
         self.get(MAIN_URL)
         self.load_cookies()
@@ -55,6 +57,8 @@ class TestNP(BaseCase):
         self.click(BACK_TO_LK_BUTTON)
         self.assert_text(ORDERS_TITLE, MY_ORDERS_TITLE)
 
+
+    @pytest.mark.run(order=4)
     def test_catalog(self):
         self.open(CATALOG_URL)
         self.maximize_window()

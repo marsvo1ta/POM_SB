@@ -1,6 +1,9 @@
 import names
 import random
 import os
+from fake_email import Email
+from password_generator import PasswordGenerator
+
 
 randomize = random.randrange(1, 11)
 random_track_number = random.randrange(111111111, 999999999)
@@ -8,10 +11,14 @@ random_identical_number = random.randrange(1111111111, 9999999999)
 
 EMAIL = str(os.environ.get('NPS_EMAIL'))
 PASSWORD = str(os.environ.get('NPS_PASS'))
-PHONE = f'+38068{random.randrange(2111111, 9999999)}'
+PHONE = f'68{random.randrange(2111111, 9999999)}'
 
+NEW_FIRST_NAME = 'Тестовий'
+NEW_SECOND_NAME = 'Тестовий'
 RANDOM_NAME = names.get_first_name()
 RANDOM_SURNAME = names.get_last_name()
+RANDOM_EMAIL = Email().Mail()['mail']
+RANDOM_PASSWORD = PasswordGenerator().generate()
 RANDOM_DIGIT = str(randomize)
 SUM_RANDOM_DIGITS = randomize * 2
 RANDOM_TRACK_NUMBER = str(random_track_number)

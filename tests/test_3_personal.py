@@ -1,3 +1,4 @@
+import pytest
 from seleniumbase import BaseCase
 from time import sleep
 from data.locators import *
@@ -6,6 +7,8 @@ from data.handling_selectors import *
 
 class TestHSCode(BaseCase):
     
+
+    @pytest.mark.run(order=7)
     def test_personal(self):
         self.open(MAIN_URL)
         self.load_cookies()

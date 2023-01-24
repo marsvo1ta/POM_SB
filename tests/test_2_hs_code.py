@@ -61,7 +61,7 @@ class TestHSCode(BaseCase):
         self.click(LABEL)
         self.scroll_to_element(BONUSES)
         self.assert_text('1010', FULL_ORDER_SUM)
-        self.assert_text('292.95', CUSTOMS_PRICE)
+        self.assert_text('292.60', CUSTOMS_PRICE)
 
         #Not in List - 555$
         self.click(DELETE_ONE_POSITION)

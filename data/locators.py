@@ -26,6 +26,9 @@ REGISTER_PASSWORD = "input#password-1"
 REGISTER_SUBMIT_BUTTON = "button.btn"
 REGISTER_SUCCESS_SCREEN = "p.alert__text"
 OPEN_LETTER = "span"
+OWN_CABINET = contains("a", "Особистий кабінет")
+CABINET_MENU = "a.header-right__login"
+LOGOUT_FROM_CABINET = contains("a.profile-link", "Вихід")
 
 # Test Login
 ALLOW_PRIVACY_POLICY = "button#accept-privacy-policy"
@@ -123,40 +126,40 @@ IDENTICAL_NUMBER = "div.form__field:contains('Ідентифікаційний �
 
 
 #Test Passport
-FIRST_NAME = "input#user_passport_firstName"
-LAST_NAME = "input#user_passport_lastName"
-MIDDLE_NAME = "input#user_passport_middleName"
-SERIAL_NUMBER = "input#user_passport_serialNumber"
-ISSUED_BY = "input#user_passport_issuedBy"
-REGISTRATION_ADDRESS = "input#user_passport_registration"
-IDENTICAL_NUMBER_INPUT = "input#user_passport_taxNumber"
+FIRST_NAME = "input#user_passport_verification_firstName"
+LAST_NAME = "input#user_passport_verification_lastName"
+MIDDLE_NAME = "input#user_passport_verification_middleName"
+SERIAL_NUMBER = "input#user_passport_verification_serialNumber"
+ISSUED_BY = "input#user_passport_verification_issuedBy"
+REGISTRATION_ADDRESS = "input#user_passport_verification_registration"
+IDENTICAL_NUMBER_INPUT = "input#user_passport_verification_taxNumber"
 ERROR_TITLE = "span.text-error"
 ID_CARD_TEXT = contains('a.form-office__tab','ID картка')
-BIRTHDATE_DAY = "input#user_passport_birthDate_day"
-BIRTHDAY_YEAR = "input#user_passport_birthDate_year"
-BIRTHDAY_MONTH_SELECT = "span#select2-user_passport_birthDate_month-container"
+BIRTHDATE_DAY = "input#user_passport_verification_birthDate_day"
+BIRTHDAY_YEAR = "input#user_passport_verification_birthDate_year"
+BIRTHDAY_MONTH_SELECT = "span#select2-user_passport_verification_birthDate_month-container"
 SELECT_FEBRUARY = contains('li', 'лютого')
-ISSUED_BY_MONTH = "span#select2-user_passport_date_month-container"
+ISSUED_BY_MONTH = "span#select2-user_passport_verification_date_month-container"
 SELECT_MARCH = contains('li', 'березня')
-ISSUED_BY_DAY = "input#user_passport_date_day"
-ISSUED_BY_YEAR = "input#user_passport_date_year"
+ISSUED_BY_DAY = "input#user_passport_verification_date_day"
+ISSUED_BY_YEAR = "input#user_passport_verification_date_year"
 
 
 #Test ID Card
-ID_FIRST_NAME = "input#user_identity_card_firstName"
-ID_SECOND_NAME = "input#user_identity_card_lastName"
-ID_MIDDLE_NAME = "input#user_identity_card_middleName"
-ID_CARD_NUMBER = "input#user_identity_card_identityCardNumber"
-ID_ISSUED_BY = "input#user_identity_card_issuedBy"
-ID_ADDRESS_REGISTRATION = "input#user_identity_card_registration"
-ID_IDENTITY_NUMBER = "input#user_identity_card_taxNumber"
-ID_BIRTHDATE_DAY = "input#user_identity_card_birthDate_day"
-ID_BIRTHDATE_YEAR = "input#user_identity_card_birthDate_year"
-ID_BIRTHDATE_MONTH = "span#select2-user_identity_card_birthDate_month-container"
+ID_FIRST_NAME = "input#user_identity_card_verification_firstName"
+ID_SECOND_NAME = "input#user_identity_card_verification_lastName"
+ID_MIDDLE_NAME = "input#user_identity_card_verification_middleName"
+ID_CARD_NUMBER = "input#user_identity_card_verification_identityCardNumber"
+ID_ISSUED_BY = "input#user_identity_card_verification_issuedBy"
+ID_ADDRESS_REGISTRATION = "input#user_identity_card_verification_registration"
+ID_IDENTITY_NUMBER = "input#user_identity_card_verification_taxNumber"
+ID_BIRTHDATE_DAY = "input#user_identity_card_verification_birthDate_day"
+ID_BIRTHDATE_YEAR = "input#user_identity_card_verification_birthDate_year"
+ID_BIRTHDATE_MONTH = "span#select2-user_identity_card_verification_birthDate_month-container"
 ID_SELECT_APRIL = contains("li", "квітня")
-ID_ISSUED_BY_DAY = "input#user_identity_card_date_day"
-ID_ISSUED_BY_YEAR = "input#user_identity_card_date_year"
-ID_ISSUED_BY_MONTH = "span#select2-user_identity_card_date_month-container"
+ID_ISSUED_BY_DAY = "input#user_identity_card_verification_date_day"
+ID_ISSUED_BY_YEAR = "input#user_identity_card_verification_date_year"
+ID_ISSUED_BY_MONTH = "span#select2-user_identity_card_verification_date_month-container"
 ID_SELECT_MAY = contains("li", "травня")
 ID_SAVE_CARD = contains('button', 'Зберегти ID картку')
 

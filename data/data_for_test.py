@@ -11,7 +11,7 @@ random_identical_number = random.randrange(1111111111, 9999999999)
 
 EMAIL = str(os.environ.get('NPS_EMAIL'))
 PASSWORD = str(os.environ.get('NPS_PASS'))
-PHONE = f'68{random.randrange(2111111, 9999999)}'
+PHONE = f'68{random.randrange(2111111, 3333333)}'
 
 NEW_FIRST_NAME = 'Тестовий'
 NEW_SECOND_NAME = 'Тестовий'

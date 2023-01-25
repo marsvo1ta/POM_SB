@@ -1,0 +1,27 @@
+version: 2.1
+orbs:
+  browser-tools: circleci/browser-tools@1.4.0
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.10
+      - image: selenium/standalone-chrome:3.11.0
+      - image: cimg/node:19.3.0-browsers
+    steps:
+      - browser-tools/install-chrome
+      - checkout
+      - run:
+          command: |
+            google-chrome --version
+      - run:
+          name: Upgrade pip
+          command: |
+            pip install --upgrade pip
+      - run:
+          name: Install Dependencies
+          command: |
+            pip install -r requirements.txt
+      - run:
+          name: Run Selenium Tests
+          command: |
+            pytest tests/test_0_start_staging.py --headless

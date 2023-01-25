@@ -19,9 +19,10 @@ jobs:
           name: Install Dependencies
           command: |
             pip install -r requirements.txt
-      - run: export NPS=$NPS_URL
+      
       - run:
           name: Run Selenium Tests
           command: |
+            export -x NPS=$NPS_URL
             env
             

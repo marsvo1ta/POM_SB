@@ -5,8 +5,6 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.10
-      - image: selenium/standalone-chrome:3.11.0
-      - image: cimg/node:19.3.0-browsers
     steps:
       - browser-tools/install-chrome
       - checkout
@@ -24,5 +22,5 @@ jobs:
       - run:
           name: Run Selenium Tests
           command: |
-            echo 'export NPS_URL=$NPS_URL'
+            export NPS_URL=${NPS_URL}
             pytest tests/test_0_start_staging.py --headless

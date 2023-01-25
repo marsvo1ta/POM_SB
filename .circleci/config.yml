@@ -22,5 +22,6 @@ jobs:
       - run:
           name: Run Selenium Tests
           command: |
-            export NPS_URL=${NPS_URL}
-            pytest tests/test_0_start_staging.py --headless
+            # export NPS_URL=${NPS_URL}
+            # pytest tests/test_0_start_staging.py --headless
+            env

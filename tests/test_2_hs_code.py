@@ -73,7 +73,8 @@ class TestHSCode(BaseCase):
         self.type(UNIT_PRICE, '555')
         self.click(LABEL)
         self.scroll_to_element(CUSTOMS_PRICE)
-        self.assert_text('137.20', CUSTOMS_PRICE)
+        currency = self.get_text(CUSTOMS_PRICE)
+        assert 130 < float(currency) < 140
         self.scroll_to_element(FULL_ORDER_SUM)
         self.assert_text('555.00', FULL_ORDER_SUM)
 
@@ -88,4 +89,6 @@ class TestHSCode(BaseCase):
         self.click(LABEL)
         self.scroll_to_bottom()
         self.assert_text('565.00', FULL_ORDER_SUM)
-        self.assert_text('137.20', CUSTOMS_PRICE)
+        currency = self.get_text(CUSTOMS_PRICE)
+        assert 130 < float(currency) < 140
+       

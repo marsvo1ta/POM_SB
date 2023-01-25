@@ -23,4 +23,5 @@ jobs:
           name: Run Selenium Tests
           command: |
             echo $NPS_URL
+            echo $MY
             

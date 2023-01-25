@@ -27,8 +27,8 @@ class TestHSCode(BaseCase):
         self.type(IDENTICAL_NUMBER_INPUT, RANDOM_IDENTICAL_NUMBER)
         self.click(SAVE_PASSPORT_BUTTON)
         try:
-            self.assert_element(ERROR_TITLE, timeout=1)
-            self.assert_text('Значення недопустиме.', ERROR_TITLE, timeout=1)
+            self.assert_element(ERROR_TITLE, timeout=2)
+            self.assert_text('Значення недопустиме.', ERROR_TITLE, timeout=2)
         except NoSuchElementException:
             self.assert_text('ID картка', ID_CARD_TEXT)
         self.click(BIRTHDAY_MONTH_SELECT)

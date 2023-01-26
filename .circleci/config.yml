@@ -23,6 +23,5 @@ jobs:
       - run:
           name: Run Selenium Tests
           command: |
-            export -x NPS=$NPS_URL
-            env
+            echo $NPS
             

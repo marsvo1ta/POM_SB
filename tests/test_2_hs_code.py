@@ -54,7 +54,7 @@ class TestHSCode(BaseCase):
         self.assert_text('0.00', CUSTOMS_DEFAULT_STATE)
         self.type(cargo_input_field(6), f'{STARLINK}\n')
         self.type(SECOND_UNIT_PRICE, '1000')
-        self.click_if_visible(LABEL)
+        self.click(LABEL)
         self.scroll_to_element(BONUSES)
         self.assert_text(EMPTY_CUSTOMS_TEXT, CUSTOMS_ELEMENT)
 

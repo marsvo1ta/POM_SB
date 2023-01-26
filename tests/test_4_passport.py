@@ -51,7 +51,7 @@ class TestHSCode(BaseCase):
         
         #Test ID_Card
         self.click(ID_CARD_TEXT)
-        self.type(ID_FIRST_NAME, RANDOM_NAME)
+        self.type(ID_FIRST_NAME, RANDOM_NAME, timeout=20)
         self.type(ID_SECOND_NAME, RANDOM_SURNAME)
         self.type(ID_MIDDLE_NAME, RANDOM_NAME)
         self.type(ID_CARD_NUMBER, RANDOM_IDENTICAL_NUMBER)

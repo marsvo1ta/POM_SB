@@ -49,7 +49,7 @@ class TestNP(BaseCase):
         self.scroll_to_bottom()
         self.type(TRACK_NUMBER, RANDOM_TRACK_NUMBER)
         self.click(CONTINUE_TO_ORDER_CREATION)
-        self.click(ADDRESS_SELECT)
+        self.click(ADDRESS_SELECT, timeout=20)
         self.click(FIRST_ADDRESS)
         self.type(INPUT_PHONE, PHONE)
         self.click(SUBMIT_BUTTON)

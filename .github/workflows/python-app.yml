@@ -41,6 +41,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip freeze > requirements.txt
         # pip install --upgrade --upgrade-strategy eager seleniumbase names defusedxml genbadge  send_gmail pytest-md pytest-github-report fake_email random-password-generator
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test

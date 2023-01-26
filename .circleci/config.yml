@@ -23,5 +23,5 @@ jobs:
       - run:
           name: Run Selenium Tests
           command: |
-            echo $NPS
+            echo $SECRET
             

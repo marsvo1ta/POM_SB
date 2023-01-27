@@ -49,5 +49,5 @@ jobs:
         export NPS_EMAIL=${{ secrets.EMAIL }}
         export NPS_URL=${{ secrets.NPS_URL }}
         pytest tests/test_1_register.py --headless --github-report --dashboard -v --pls=none --sjw --firefox
-        
+        pytest tests/test_4_passport.py --headless --github-report --dashboard -v --pls=none --sjw --firefox
         

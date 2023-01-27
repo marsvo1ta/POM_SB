@@ -40,8 +40,8 @@ jobs:
         pip install --upgrade --upgrade-strategy eager seleniumbase names defusedxml pytest-md pytest-github-report fake_email random-password-generator 
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Install Firefox
-      run: sudo apt-get install firefox
-      
+      run: sudo apt install firefox
+
     - name: Test
       run: |
         export NPS_PASS=${{ secrets.PASSWORD }}

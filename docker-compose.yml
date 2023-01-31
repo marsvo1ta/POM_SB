@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    image: docker_tests_np
+    container_name: docker_tests_container
+    env_file:
+     - env
+    volumes:
+      - .:/app/

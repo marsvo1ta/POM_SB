@@ -43,8 +43,10 @@ LK_TITLE = 'h1'
 ADD_ORDER = "a.cabinet-link"
 COUNTRY_SELECT = "div#vs1__combobox"
 SELECT_USA = "li#vs1__option-0"
+SELECT_POLAND = contains("li", "Польща")
+SELECT_BRITAIN = contains("li", "Велика Британія")
 STORE_SELECT = "div#vs2__combobox"
-SELECT_AMAZON = "li#vs2__option-1"
+SELECT_AMAZON = contains("li", "Amazon")
 ORDER_NAME = "input#forward_order_name"
 ORDER_NAME_LAT = "input#forward_order_items_0_name"
 PLUS_COUNTER = "span.input-number__btn.input-number__plus"
@@ -91,8 +93,8 @@ CZ_COUTRY = "a.countries-link:contains('Чехія')"
 
 #Test HS Code
 CARGO_CATEGORY = "div#vs4__combobox"
-STARLINK_FROM_SELECT = "li#vs4__option-0"
-NEEDLE_FROM_SELECT = "div.select-option:contains('Голка')"
+STARLINK_FROM_SELECT = contains("li", "Starlink")
+NEEDLE_FROM_SELECT = contains("div.select-option", "Голка")
 LABEL = "i.icon-info"
 CUSTOMS_DEFAULT_STATE = "span#order_customs_clearance"
 CUSTOMS_PRICE = CUSTOMS_DEFAULT_STATE
@@ -164,3 +166,6 @@ ID_SELECT_MAY = contains("li", "травня")
 ID_SAVE_CARD = contains('button', 'Зберегти ID картку')
 
 
+#Test Currency
+CURRENCY_ICON = "span.price-symbol"
+CUSTOMS_CURRENCY_ICON = contains("span.delivery-information__right", "zł")

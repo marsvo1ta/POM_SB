@@ -1,7 +1,8 @@
 from seleniumbase import BaseCase
 from data.locators import *
 from data.data_for_test import *
-from time import sleep
+
+
 
 class TestCurrency(BaseCase):
     def test_currency(self):
@@ -23,3 +24,4 @@ class TestCurrency(BaseCase):
         self.scroll_to_bottom()
         self.click(SUBMIT_BUTTON)
         self.assert_text(CABINET, SUCCESS_SCREEN)
+        self.assert_element(SUBMIT_BUTTON)

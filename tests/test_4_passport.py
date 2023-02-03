@@ -42,14 +42,6 @@ class TestHSCode(BaseCase):
         self.click(SAVE_PASSPORT_BUTTON)
         
 
-    # @pytest.mark.run(order=9)
-    # def test_id_card(self):
-    #     self.open(MAIN_URL)
-    #     self.load_cookies('new_user.txt')
-    #     self.open(PASSPORT_URL)
-    #     self.maximize_window()
-    #     self.scroll_to_top()
-
         #Test ID_Card
         self.click(ID_CARD_TEXT)
         self.type(ID_FIRST_NAME, RANDOM_NAME, timeout=20)

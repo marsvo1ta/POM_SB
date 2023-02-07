@@ -21,7 +21,6 @@ jobs:
     #         pip list
       - run:
           name: command
-          command: echo $a
-          environment: 
-            a: aofngagg
+          command: echo $NPS_URL
+          
             

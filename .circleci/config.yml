@@ -2,13 +2,6 @@ version: 2.1
 orbs:
   browser-tools: circleci/browser-tools@1.4.0
 
-workflows:
-  my-workflow:
-    jobs:
-      - Run Selenium Tests:
-          context:
-            - org-global
-            - SECRET
 
 jobs:
   build:
@@ -24,13 +17,5 @@ jobs:
           name: Upgrade pip
           command: |
             pip install --upgrade pip
-      - run:
-          name: Install Dependencies
-          command: |
-            pip install -r requirements.txt
-      
-      - run:
-          name: Run Selenium Tests
-          command: |
-            echo $NPS
+     
             

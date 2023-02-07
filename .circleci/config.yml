@@ -8,19 +8,19 @@ jobs:
     docker:
       - image: circleci/python:3.10
     steps:
-      - browser-tools/install-chrome
-      - checkout
-      - run:
-          command: |
-            google-chrome --version
-      - run:
-          name: Upgrade pip
-          command: |
-            pip install --upgrade pip
-            pip install -r requirements.txt
-            pip list
+    #   - browser-tools/install-chrome
+      # - checkout
+    #   - run:
+    #       command: |
+    #         google-chrome --version
+    #   - run:
+    #       name: Upgrade pip
+    #       command: |
+    #         pip install --upgrade pip
+    #         pip install -r requirements.txt
+    #         pip list
       - run:
           name: command
           command: |
-            a = "aofngagg"
+            a="aofngagg"
             echo $a

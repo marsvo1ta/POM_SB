@@ -19,7 +19,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: pytest tests --headless
+          command: pytest tests --headless --github-report --dashboard -v --pls=none --sjw
 
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.

@@ -3,14 +3,18 @@ import os
 from easy_contain.manage_contains import contains
 
 
-MAIN_URL = str(os.environ.get('NPS_URL'))
+# MAIN_URL = str(os.environ.get('NPS_URL'))
+MAIN_URL = 'https://npshopping-stag.c1.npshopping.com/'
 REGISTRATION_PAGE = f'{MAIN_URL}register'
 ORDERS_URL = f'{MAIN_URL}orders'
 CATALOG_URL = f'{MAIN_URL}catalog'
 PERSONAL_DATA_URL = f'{MAIN_URL}profile'
 NEW_ORDER = f'{MAIN_URL}forwarding/declaration'
 PASSPORT_URL = f'{PERSONAL_DATA_URL}/passport'
-CATCHER_URL = f'{MAIN_URL[:-1]}:1080'
+# CATCHER_URL = f'{MAIN_URL[:-1]}:1080'
+CATCHER_CRED = os.environ.get('CATCHER')
+CATCHER_URL = f'https://{CATCHER_CRED}@npshopping-stag-mail.c1.npshopping.com/'
+
 
 # Test Start Deploy
 START_DEPLOY_BUTTON = 'button#start-btn'
@@ -18,14 +22,15 @@ DEPLOY_LOADER = 'img#progress-animation'
 DEPLOY_TEXT = 'h1#in-progress'
 
 # Test Registration
-REGISTER_FIRST_NAME = "input#name"
-REGISTER_SECOND_NAME = "input#surname"
-REGISTER_PHONE = "input#fos_user_registration_form_phone"
-REGISTER_EMAIL = "input#email-1"
-REGISTER_PASSWORD = "input#password-1"
+REGISTER_FIRST_NAME = "input#registration_form_lastNameCyr"
+REGISTER_SECOND_NAME = "input#registration_form_firstNameCyr"
+REGISTER_PHONE = "input#registration_form_phone"
+REGISTER_EMAIL = "input#registration_form_email"
+REGISTER_PASSWORD = "input#registration_form_plainPassword"
 REGISTER_SUBMIT_BUTTON = "button.btn"
 REGISTER_SUCCESS_SCREEN = "p.alert__text"
-OPEN_LETTER = "span"
+FIND_EMAIL = 'div.ng-binding.ng-scope'
+OPEN_LETTER = "div.button.letter__button"
 OWN_CABINET = contains("a", "Особистий кабінет")
 CABINET_MENU = "a.header-right__login"
 LOGOUT_FROM_CABINET = contains("a.profile-link", "Вихід")

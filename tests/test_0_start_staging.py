@@ -6,7 +6,6 @@ from data.locators import *
 
 class TestNPStart(BaseCase):
 
-
     @pytest.mark.run(order=1)
     def test_start_staging(self):
         self.open(MAIN_URL)

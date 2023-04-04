@@ -23,7 +23,8 @@ class TestHSCode(BaseCase):
         self.click(REGISTER_SUBMIT_BUTTON)
         find_email = self.get_text(REGISTER_SUCCESS_SCREEN).split(" ")[7][:-1]
         self.open(CATCHER_URL)
-        self.click(contains('tr', find_email))
+        
+        self.click(contains(FIND_EMAIL, find_email))
         self.switch_to_frame(0)
         self.click(OPEN_LETTER)
         self.switch_to_newest_tab()

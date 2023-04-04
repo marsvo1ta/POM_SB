@@ -28,6 +28,11 @@ class TestNP(BaseCase):
         self.get(ORDERS_URL)
         self.maximize_window()
         self.click(ADD_ORDER)
+        if self.is_element_visible('input#user_update_cyrillic_profile_middleNameCyr'):
+            self.type('input#user_update_cyrillic_profile_middleNameCyr','Тест')
+            self.click('button.btn')
+            self.scroll_to_top()
+            self.click(ADD_ORDER)
         self.click(COUNTRY_SELECT)
         self.click(SELECT_USA)
         self.click(STORE_SELECT)

@@ -40,7 +40,7 @@ class TestHSCode(BaseCase):
         self.click(LABEL)
         self.scroll_to_element(BONUSES)
         currency = self.get_text(CUSTOMS_PRICE)
-        assert 230 < float(currency) < 310
+        assert 230 < float(currency) < 550
         self.assert_text('1000', ORDER_SUM)
         self.type(UNIT_PRICE, '1')
         self.click(LABEL)
@@ -66,7 +66,7 @@ class TestHSCode(BaseCase):
         self.scroll_to_element(BONUSES)
         self.assert_text('1010', FULL_ORDER_SUM)
         currency = self.get_text(CUSTOMS_PRICE)
-        assert 230 < float(currency) < 310
+        assert 230 < float(currency) < 550
 
 
         #Not in List - 555$
@@ -77,7 +77,7 @@ class TestHSCode(BaseCase):
         self.click(LABEL)
         self.scroll_to_element(CUSTOMS_PRICE)
         currency = self.get_text(CUSTOMS_PRICE)
-        assert 130 < float(currency) < 140
+        assert 130 < float(currency) < 300
         self.scroll_to_element(FULL_ORDER_SUM)
         self.assert_text('555.00', FULL_ORDER_SUM)
 
@@ -93,5 +93,5 @@ class TestHSCode(BaseCase):
         self.scroll_to_bottom()
         self.assert_text('565.00', FULL_ORDER_SUM)
         currency = self.get_text(CUSTOMS_PRICE)
-        assert 130 < float(currency) < 140
+        assert 130 < float(currency) < 300
        

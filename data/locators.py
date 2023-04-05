@@ -3,17 +3,16 @@ import os
 from easy_contain.manage_contains import contains
 
 
-# MAIN_URL = str(os.environ.get('NPS_URL'))
-MAIN_URL = 'https://npshopping-stag.c1.npshopping.com/'
+MAIN_URL = str(os.environ.get('NPS_URL'))
 REGISTRATION_PAGE = f'{MAIN_URL}register'
 ORDERS_URL = f'{MAIN_URL}orders'
 CATALOG_URL = f'{MAIN_URL}catalog'
 PERSONAL_DATA_URL = f'{MAIN_URL}profile'
 NEW_ORDER = f'{MAIN_URL}forwarding/declaration'
 PASSPORT_URL = f'{PERSONAL_DATA_URL}/passport'
-# CATCHER_URL = f'{MAIN_URL[:-1]}:1080'
 CATCHER_CRED = os.environ.get('CATCHER')
 CATCHER_URL = f'https://{CATCHER_CRED}@npshopping-stag-mail.c1.npshopping.com/'
+CALCULATOR_URL = f'{MAIN_URL}calculator'
 
 
 # Test Start Deploy
@@ -174,3 +173,13 @@ ID_SAVE_CARD = contains('button', 'Зберегти ID картку')
 #Test Currency
 CURRENCY_ICON = "span.price-symbol"
 CUSTOMS_CURRENCY_ICON = contains("span.delivery-information__right", "zł")
+
+#Test Calculator
+CALCULATOR_USA = contains('div.select-option', 'США')
+BRITAIN_FROM_SELECT = contains('li', 'Велика Британія')
+CALCULATOR_BRITAIN = contains('div.select-option', 'Велика Британія')
+GERMANY_FROM_SELECT = contains('li', 'Німеччина')
+USA_PAYMENT = contains('div.calc-info__row', '7.00')
+BRITAIN_PAYMENT = contains('div.calc-info__row', '7.00')
+GERMANY_PAYMENT = contains('div.calc-info__row', '5.00')
+IS_INCREASE = contains('div.calc-info__row', '9.00')

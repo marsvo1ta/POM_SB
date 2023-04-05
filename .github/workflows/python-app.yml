@@ -49,8 +49,8 @@ jobs:
         export NPS_EMAIL=${{ secrets.EMAIL }}
         export NPS_URL=${{ secrets.NPS_URL }}
         export CATCHER=${{ secrets.CATCHER}}
-        # pytest tests --headless --github-report --dashboard -v --pls=none --sjw
-        python3 tests/run.py
+        pytest tests --headless --github-report --dashboard -v -s --pls=none --sjw -n=4
+        # python3 tests/run.py
         
     - name: Send Gmail
       run: |
